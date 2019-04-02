@@ -1,0 +1,5 @@
+# Overview
+
+This folder is for "library type" files that are most likely to be used across multiple projects.
+
+Each file should be placed in a new directory with a README.md file explaining its use.
