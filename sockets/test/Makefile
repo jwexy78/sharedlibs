@@ -1,7 +1,12 @@
+SHAREDLIBSROOT = ../..
+
+CC = g++
+CFLAGS = -std=c++11
+
+include ../rules.mk
+include $(SHAREDLIBSROOT)/catch/rules.mk
+
 all: test
 
-IFLAGS += -I deps/catch/include 
-IFLAGS += -I ../include
-
 test: test.cpp
-	g++ -std=c++11 $(IFLAGS) test.cpp -o test.out
+	$(CC) $(CFLAGS) $(IFLAGS) test.cpp -o test.out
