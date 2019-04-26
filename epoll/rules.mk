@@ -1,0 +1,5 @@
+ifndef SHAREDLIBSROOT
+SHAREDLIBSROOT=../..
+endif
+
+IFLAGS += -I $(SHAREDLIBSROOT)/epoll/include
